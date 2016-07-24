@@ -9,6 +9,7 @@ module MonkeyType
         unless returned.is_duck? type
           raise TypeError, "returned value #{returned} is not #{type}"
         end
+        returned
       end
     end
   end
