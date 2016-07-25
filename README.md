@@ -1,4 +1,7 @@
 ![a monkey typing][logo]
+# Monkey Type!
+a microgem to add a micro type system to ruby
+
 # Why?
 Adding just a bit of typing to ruby is just great. It makes you, as a programmer
 have more control of what gets passed to your classes, methods or functions
@@ -37,24 +40,24 @@ Simple isn't it?
 using MonkeyType
 
 class Returner
-  def return_numeric
+  def return1
     1
   end
 
-  def return_Array
+  def return2
     []
   end
 
-  contract :return_numeric, Numeric
-  contract :return_Array, Array
+  contract :return1, Numeric
+  contract :return2, Array
 end  
 ```
 
 Remember to call *contract* **after** defining the methods.   
 calling this contract will invoke metaprogramming deities and will ensure that the
-method will return something like a Numeric or a Array.
+method will return something like a Numeric in case of return1 and a Array in case of return2.
 Also, you can call the functions on a typeless manner, just add **"\_typeless"** to the
-end of the name of the method (like *return_numeric_typeless*).
+end of the name of the method (like *return1_typeless*).
 
 
 I have also included some types for your commodity.
