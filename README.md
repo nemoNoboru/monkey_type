@@ -14,15 +14,20 @@ Well. The gem is just a [elegant][ref_link] monkeyPatch of Object and Class clas
 And it does types.   
 So... MonkeyTypes!
 
+# Installation
+```
+gem install monkey_type
+```
+
 # Usage
 well. I tried to simplify the usage as hard as i can.   
 There is just two new things
 to learn. the method *#is* and the class macro *contract*.   
 the method is used like this:   
-(remember to write **using MonkeyType**)
+(remember to write **require 'monkey_type'**)
 
 ```ruby
-using MonkeyType
+require 'monkey_type'
 
 def accepts_only_nums(num)
   num.is Numeric
@@ -31,13 +36,13 @@ end
 ```
 
 
-the method is will raise an exception if num don't are numeric or somenthing like numeric.
+the method is will raise an exception if num isn't numeric or something like numeric.
 Remember, we are duck typing here.
 Simple isn't it?
 
 
 ```ruby
-using MonkeyType
+require 'monkey_type'
 
 class Returner
   def return1
