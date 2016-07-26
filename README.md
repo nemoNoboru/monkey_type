@@ -1,4 +1,6 @@
 ![a monkey typing][logo]
+
+[![Gem Version](https://badge.fury.io/rb/monkey_type.svg)](https://badge.fury.io/rb/monkey_type)   
 # Monkey Type!
 a microgem to add a micro type system to ruby
 
@@ -9,7 +11,7 @@ and you know what your functions (and methods) returns.
 And crash earlier. ( thx "the pragmatic programmer" )   
 Check out what [Matz says][matz_link]
 
-# Why name it monkeyType?
+# Why name it MonkeyType?
 Well. The gem is just a [elegant][ref_link] monkeyPatch of Object and Class classes.
 And it does types.   
 So... MonkeyTypes!
