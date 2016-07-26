@@ -39,7 +39,7 @@ end
 ```
 
 
-the method is will raise an exception in the form of:
+the method *#is* will raise an exception in the form of:
 ```
 error: String is not an Numeric (TypeError)
 ```
